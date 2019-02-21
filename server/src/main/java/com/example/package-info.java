@@ -1,4 +1,4 @@
-/** this a package info
+/** this a package info.
 * file
 */
 
