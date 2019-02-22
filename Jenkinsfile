@@ -16,6 +16,13 @@ pipeline {
                     archiveArtifacts artifacts: '**/target/*.war'
                 }
             }
+
+        }
+
+        stage ('Deploy to Stage'){
+            steps{
+                build job:'deploy-job'
+            }
         }
     }
 }
